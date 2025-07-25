@@ -648,7 +648,6 @@ img {
     top: 24px;
     right: 16px;
     cursor: pointer;
-    z-index: 1101;
   }
   .mobile-menu .page-nav {
     display: flex;
@@ -705,8 +704,6 @@ img {
   .mobile-menu .social-links .link:hover {
     background: #404bbf;
   }
-}
-@media (max-width: 768px) {
   .header-div {
     display: flex;
     align-items: center;
@@ -714,9 +711,7 @@ img {
     padding: 16px 16px;
     border-bottom: 1px solid #e7e9fc;
   }
-  .mobile-menu {
-    display: flex;
-  }
+
   .menu-toggle {
     display: none;
   }
@@ -835,6 +830,7 @@ img {
     gap: 72px;
     padding: 0;
     margin: 0;
+    width: 288px;
   }
   .section2 .header3 {
     text-align: center;
@@ -887,26 +883,33 @@ img {
     margin-left: 0;
   }
   .third {
-    margin-left: 0;
-    margin-right: 0;
+    /* margin-left: 0;
+    margin-right: 0; */
+    padding-top: 72px;
+    padding-bottom: 72px;
   }
   .footer .container {
     flex-direction: column;
     align-items: center;
     gap: 24px;
   }
-  .footer-row,
-  .footer-row-bottom {
+  #footer-row {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer-row-bottom {
+    display: flex;
     flex-direction: column;
     gap: 24px;
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 0;
-    display: flex;
-    flex: none;
-    max-width: none;
   }
+
   .first,
   .second,
   .third,
@@ -989,32 +992,7 @@ img {
     align-items: center;
   }
 }
-@media (min-width: 1159px) {
-  .mobile-menu,
-  .menu-toggle,
-  .menu-icon-label {
-    display: none;
-  }
-  .desktop-menu {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    width: 100%;
-    justify-content: space-between;
-  }
-  .page-nav {
-    flex-direction: row;
-    gap: 40px;
-    align-items: center;
-  }
-  .address {
-    flex-direction: row;
-    gap: 40px;
-    margin: 0;
-    display: flex;
-    align-items: center;
-  }
-}
+
 @media (max-width: 1158px) {
   .container .item,
   .team,
@@ -1121,5 +1099,52 @@ img {
   }
   .textarea {
     width: 360px;
+  }
+}
+@media (min-width: 1159px) {
+  .mobile-menu,
+  .menu-toggle,
+  .menu-icon-label {
+    display: none;
+  }
+  .desktop-menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .page-nav {
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+  }
+  .address {
+    flex-direction: row;
+    gap: 40px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  .footer .container {
+    margin: 0;
+  }
+  .second {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .footer-row {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+    padding-left: 80px;
+  }
+  .footer-row-bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    width: 100%;
+    justify-content: center;
   }
 }
