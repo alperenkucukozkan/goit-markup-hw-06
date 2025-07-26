@@ -30,7 +30,9 @@ ul {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
   object-fit: cover;
 }
 
@@ -941,7 +943,7 @@ img {
     text-align: center;
   }
   .modal {
-    background-color: #2e2f42;
+    background: rgba(46, 47, 66, 0.4);
   }
   .modal-content {
     width: 288px;
@@ -1080,7 +1082,7 @@ img {
     align-items: flex-end;
   }
   .modal {
-    background-color: #2e2f42;
+    background: rgba(46, 47, 66, 0.4);
   }
   .modal-content {
     width: 408px;
